@@ -38,6 +38,8 @@ console.log(b);
 let UserNameOne = "John";
 let UserNameOneTwo = UserNameOne;
 
+UserNameOneTwo = "Stalluy";
+
 console.log("UserNameOne:- ",UserNameOne)
 console.log("UserNameOneTwo:- ",UserNameOneTwo)
 
