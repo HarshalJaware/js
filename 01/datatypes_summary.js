@@ -28,3 +28,20 @@ let b = Symbol("123");
 console.log(a === b);
 console.log(a);
 console.log(b);
+
+
+
+//**************************************************************************************** */
+//JS uses two types of memory Stcak memory and Heap memory
+//Stack memory is  used for Primitive data types
+//Heap memory is used for Non-Primitive data types
+let UserNameOne = "John";
+let UserNameOneTwo = UserNameOne;
+
+console.log("UserNameOne:- ",UserNameOne)
+console.log("UserNameOneTwo:- ",UserNameOneTwo)
+
+
+
+
+
