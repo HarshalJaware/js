@@ -51,3 +51,27 @@ const books = [
 
 
 
+
+    //reducer
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+const total = numbers.reduce(function(acc,curr){
+    console.log(`Accumulator value is  ${acc} and currentVal: ${curr}`)
+    return acc + curr
+},0);
+
+console.log(total)
+
+const arrTotal = numbers.reduce((acc,cu)=>{
+    return acc+ cu
+});
+
+console.log(arrTotal)
+
+
+
+
+
+
+
+
