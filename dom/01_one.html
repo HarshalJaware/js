@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parentDiv = document.querySelector(".parent");
+    //console.log(parentDiv);
+    //console.log(parentDiv.children[1].innerHTML);
+
+    for (let index = 0; index < parentDiv.children.length; index++) {
+        const element = parentDiv.children[index].innerHTML;
+        console.log(element);
+    }
+    console.log(parentDiv.firstElementChild);
+    console.log(parentDiv.lastElementChild);
+    console.log(parentDiv.childNodes);
+
+
+
+</script>
+</html>
+
+
