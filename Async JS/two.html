@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        //approach 1
+        // setInterval(()=>{
+        //     console.log("Hello Harshal")
+        // },2000)
+
+        //approach 2
+        let intervalId; // Declare variable to store the interval ID
+
+        const setTimeinterval = function(str){
+            console.log(`Hello ${str}`)
+        }
+
+
+        document.querySelector("#start").addEventListener('click',()=>{
+            intervalId = setInterval(setTimeinterval,2000,"John")
+            console.log("Start")
+        });
+
+        document.querySelector("#stop").addEventListener('click',()=>{
+
+            clearInterval(intervalId);
+            console.log("Stop")
+        });
+
+
+    </script>
+</body>
+</html>
